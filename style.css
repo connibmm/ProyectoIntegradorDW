@@ -110,9 +110,9 @@ header{
     display: none;
 }
 
-/*MAIN*/
+/*HERO*/
 
-main{
+.hero{
     background-image: url(img/portada.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -120,9 +120,6 @@ main{
     width: 100%;
     height: 610px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
-}
-
-.hero{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -326,6 +323,7 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #c49980;
+    width: 100%;
 }
 
 footer picture img{
