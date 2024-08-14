@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hércules Gym - Sign up</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>HÉRCULES GYM</h1>
+            <p>Regístrate y empieza tu camino hacia la mejor versión de ti mismo.</p>
+        </section>
+        <form action="">
+            <ul>
+                <li>
+                    <input type="text" placeholder="Nombre">
+                </li>
+                <li>
+                    <input type="text" placeholder="Apellido">
+                </li>
+                <li>
+                    <input type="email" placeholder="E-mail">
+                </li>
+                <li>
+                    <input type="tel" placeholder="Teléfono">
+                </li>
+                <li id="date">
+                    <label for="date">Fecha de nacimiento:</label>
+                    <input type="date" id="date">
+                </li>
+                <li id="genero">
+                    <ul>
+                        <li>
+                            <input type="radio" id="mujer" name="genero">
+                            <label for="mujer">Femenino</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="hombre" name="genero">
+                            <label for="hombre">Masculino</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="sin-especificar" name="genero">
+                            <label for="sin-especificar">Sin especificar</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="button-crear"><a href="login.html">Crear cuenta</a></button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #D1AC97;
+}
+
+/*NAVBAR*/
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem 2rem;
+    background-color: #c20309;
+    z-index: 3;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*navbar-list*/
+
+.navbar-list{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-list li{
+    list-style: none;
+}
+
+.navbar-list a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-list a:hover{
+    background-color: #970005;
+    border-radius: 2rem;
+}
+
+/*navbar-registro*/
+
+.navbar-registro{
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+    margin-left: auto;
+    align-items: center;
+}
+
+.navbar-registro li{
+    list-style: none;
+}
+
+.navbar-registro a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-registro a:hover{
+    background-color: #970005;
+    border-radius: 2rem;
+}
+
+.separator{
+    border-left: 1px solid #ffffff;
+    height: 24px;
+}
+
+/**/
+
+#logo{
+    width: 3rem;
+    height: 3rem;
+    margin-top: .25rem;
+}
+
+.navbar i{
+    font-size: 30px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+/*MAIN*/
+
+main{
+    background-image: url(img/portada.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 610px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0));
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section{
+    background-color: rgba(255, 255, 255, 0.61);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.calistoga-regular{
+    font-family: "Calistoga", serif;
+    font-size: 80px;
+}
+
+.hero-section p{
+    font-weight: 400;
+    margin-top: .5rem;
+    margin-bottom: 1.8rem;
+}
+
+.hero-section a{
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #c20309;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.hero-section a:hover{
+    background-color: #970005;
+}
+
+/*SECTION ABOUT US*/
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.about-us{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.315);
+    max-width: 85%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.about-us p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+/*CARDS*/
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.cards h2{
+    font-size: 30px;
+    scroll-margin-top: 100px;
+}
+
+.cards ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.cards ul li{
+    background-color: rgba(255, 255, 255, 0.315);
+    padding: 2rem;
+    width: 350px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.cards ul li h4{
+    margin: .75rem;
+    font-size: 24px;
+}
+
+.cards ul li p{
+    margin-bottom: 1rem;
+}
+
+.precio{
+    color: #970005;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.cards ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: #c20309;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+
+.cards ul li a:hover{
+    background-color: #970005;
+}
+
+.transition-duration{
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.transition-duration:hover{
+    height: 155px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+/*FORM CONTACTO*/
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto h2{
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    scroll-margin-top: 110px;
+}
+
+.contacto ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto ul li input{
+    width: 400px;
+    height: 30px;
+    border-radius: 0.5rem;
+}
+
+#Mensaje{
+    height: 100px;
+    border-radius: 0.25rem;
+}
+
+.contacto button{
+    font-size: 15px;
+    background-color: #c20309;
+    color: white;
+    padding: .5rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.contacto button:hover{
+    background-color: #970005;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c49980;
+}
+
+footer picture img{
+    width: 4rem;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 12px;
+}
+
+footer::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(168, 168, 168);
+    margin-bottom: 1.5rem;
+}

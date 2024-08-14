@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hércules Gym</title>
+    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <picture><img id="logo" src="img/logo1.png" alt="logo"></picture>
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fa-solid fa-bars"></i></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="navbar-registro">
+                <li><a href="login.html" target="_blank">Log in</a></li>
+                <span class="separator"></span>
+                <li><a href="signup.html" target="_blank">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="hero" id="inicio">
+        <section class="hero-section">
+            <h1 class="calistoga-regular">HÉRCULES GYM</h1>
+            <h2>Cree en el proceso. Ve los resultados.</h2>
+            <p>Más que un lugar para entrenar, es un espacio donde te acompañamos en cada paso de tu transformación física y mental.</p>
+            <a href="signup.html">EMPEZÁ HOY</a>
+        </section>
+    </main>
+    <section class="about-us">
+        <p>En nuestro gimnasio, nos enorgullece ofrecer una experiencia única centrada en ti. Nuestro equipo de entrenadores altamente capacitados está comprometido a brindarte el apoyo y la motivación que necesitas para alcanzar tus objetivos. Con un enfoque personalizado, instalaciones de primer nivel y una comunidad acogedora, te ofrecemos más que un lugar para entrenar: te ofrecemos un camino hacia un estilo de vida saludable y equilibrado. Elige nuestro gimnasio y descubre la diferencia de entrenar en un entorno que realmente se preocupa por tu bienestar.</p>
+    </section>
+    <section class="cards">
+        <h2 id="productos">Productos</h2>
+        <ul>
+            <li>
+                <picture><img src="img/proteina.webp" alt="proteína" class="transition-duration"></picture>
+                <h4>Proteína</h4>
+                <p>La proteína tiene una función esencial en el crecimiento de la masa muscular y la reparación de los músculos.</p>
+                <p class="precio">$35.000</p>
+                <a href="#">AGREGAR</a>
+            </li>
+            <li>
+                <picture><img src="img/creatina.webp" alt="creatina" class="transition-duration"></picture>
+                <h4>Creatina</h4>
+                <p>La creatina participa en la producción de energía para los músculos, por lo tanto mejora el rendimiento físico.</p>
+                <p class="precio">$27.000</p>
+                <a href="#">AGREGAR</a>
+            </li>
+            <li>
+                <picture><img src="img/preentreno.webp" alt="preentreno" class="transition-duration"></picture>
+                <h4>Pre-entreno</h4>
+                <p>El pre-entreno sirve para el aumento del rendimiento físico y genera un mayor flujo sanguíneo a los músculos.</p>
+                <p class="precio">$30.000</p>
+                <a href="#">AGREGAR</a>
+            </li>
+        </ul>
+    </section>
+    <form action="#">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d636.6141669421534!2d-56.98398096294698!3d-37.27579792991033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1723173521868!5m2!1ses!2sar" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section class="contacto">
+            <h2 id="contacto">Contacto</h2>
+            <ul>
+                <li>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" id="Nombre">
+                </li>
+                <li>
+                    <label for="Teléfono">Teléfono:</label>
+                    <input type="number" id="Teléfono">
+                </li>
+                <li>
+                    <label for="Mail">Mail:</label>
+                    <input type="email" id="Mail">
+                </li>
+                <li>
+                    <label for="Mensaje">Mensaje:</label>
+                    <input type="text" id="Mensaje">
+                </li>
+            </ul>
+            <button>Enviar</button>
+        </section>
+    </form>
+    <footer>
+        <picture><img src="img/footer.png" alt=""></picture>
+        <ul>
+            <li>Teléfono: 2255-456789</li>
+            <li>Mail: herculesgym@gmail.com</li>
+            <li>Dirección: Av. 3 n°2590</li>
+        </ul>
+        <p>Hecho con ❤ por Conni</p>
+    </footer>
+</body>
+</html>
