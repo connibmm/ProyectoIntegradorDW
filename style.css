@@ -31,6 +31,10 @@ header{
     z-index: 3;
 }
 
+.menu-container{
+    display: flex;
+}
+
 .navbar{
     display: flex;
     justify-content: center;
@@ -101,7 +105,7 @@ header{
     margin-top: .25rem;
 }
 
-.navbar i{
+.menu-container i{
     font-size: 30px;
     display: none;
 }
@@ -132,6 +136,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 72%;
     padding: 3rem;
     border-radius: 2rem;
 }
@@ -139,12 +144,18 @@ header{
 .calistoga-regular{
     font-family: "Calistoga", serif;
     font-size: 80px;
+    text-align: center;
+}
+
+.hero-section h2{
+    text-align: center;
 }
 
 .hero-section p{
     font-weight: 400;
     margin-top: .5rem;
     margin-bottom: 1.8rem;
+    text-align: center;
 }
 
 .hero-section a{
@@ -203,7 +214,7 @@ section{
 .cards ul{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     list-style: none;
     gap: 3rem;
     margin-top: 1rem;
@@ -332,9 +343,9 @@ footer picture img{
 
 footer ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
     list-style: none;
-    gap: 8rem;
     font-weight: 500;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -354,4 +365,85 @@ footer::before{
     height: 1px;
     background-color: rgb(168, 168, 168);
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 957px){
+    .calistoga-regular{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px){
+    .menu-container nav ul{
+        background: #c20309;
+        width: 80%;
+        height: calc(100vh - 300px);
+        position: absolute;
+        top: 60px;
+        left: 50;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        row-gap: 3rem;
+        border-radius: 0rem 0rem 1rem 1rem;
+    }
+
+    .menu-container nav ul li a:hover{
+        background-color: #970005;
+        border-radius: 2rem;
+    }
+
+    .menu-container i{
+        display: block;
+        color: white;
+    }
+
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+
+    #toggle-menu:checked ~ .navbar-registro{
+        display: flex;
+    }
+
+    .calistoga-regular{
+        font-size: 60px;
+    }
+
+    .hero-section p{
+        text-align: center;
+    }
+
+    .cards ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    form section h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 582px){
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+    }
 }
