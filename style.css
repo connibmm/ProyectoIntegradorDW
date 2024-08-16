@@ -31,25 +31,17 @@ header{
     z-index: 3;
 }
 
-.menu-container{
-    display: flex;
-}
-
 .navbar{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*navbar-list*/
-
 .navbar-list{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    gap: 1rem;
+    align-items: center;
 }
 
 .navbar-list li{
@@ -67,51 +59,24 @@ header{
     border-radius: 2rem;
 }
 
-/*navbar-registro*/
-
-.navbar-registro{
-    display: flex;
-    flex-direction: row;
-    gap: .25rem;
-    margin-left: auto;
-    align-items: center;
-}
-
-.navbar-registro li{
-    list-style: none;
-}
-
-.navbar-registro a{
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar-registro a:hover{
-    background-color: #970005;
-    border-radius: 2rem;
-}
-
 .separator{
     border-left: 1px solid #ffffff;
     height: 24px;
 }
 
-/**/
-
-#logo{
-    width: 3rem;
-    height: 3rem;
-    margin-top: .25rem;
-}
-
-.menu-container i{
+.navbar i{
     font-size: 30px;
     display: none;
 }
 
 #toggle-menu{
     display: none;
+}
+
+#logo{
+    width: 3rem;
+    height: 3rem;
+    margin-top: .25rem;
 }
 
 /*HERO*/
@@ -374,27 +339,27 @@ footer::before{
 }
 
 @media (max-width: 768px){
-    .menu-container nav ul{
+    .navbar ul{
         background: #c20309;
-        width: 80%;
-        height: calc(100vh - 300px);
+        width: 30%;
+        height: calc(100vh - 150px);
         position: absolute;
         top: 60px;
-        left: 50;
+        right: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         display: none;
         row-gap: 3rem;
-        border-radius: 0rem 0rem 1rem 1rem;
+        border-radius: 0rem 0rem 0rem 1rem;
     }
 
-    .menu-container nav ul li a:hover{
+    .navbar ul li a:hover{
         background-color: #970005;
         border-radius: 2rem;
     }
 
-    .menu-container i{
+    .navbar i{
         display: block;
         color: white;
     }
@@ -403,8 +368,16 @@ footer::before{
         display: flex;
     }
 
-    #toggle-menu:checked ~ .navbar-registro{
+    .separator{
+        display: none;
+        border-top: #ffffff;
+        width: 1px;
+    }
+
+    #separator-media{
         display: flex;
+        border-top: #ffffff;
+        transform: rotate(90deg) scaleY(4);
     }
 
     .calistoga-regular{
@@ -456,7 +429,7 @@ footer::before{
     .hero-section{
         margin-top: 5rem;
     }
-    
+
     iframe{
         max-width: 400px;
         max-height: 400px;
