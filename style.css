@@ -270,6 +270,7 @@ form{
     width: 400px;
     height: 30px;
     border-radius: 0.5rem;
+    padding: .6rem;
 }
 
 #Mensaje{
